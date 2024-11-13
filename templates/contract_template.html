@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Template</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Service Agreement</h1>
+            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmp27dS9_KHw1FFLz9iBQ9aiPk2NqaYDrxXA&s" alt="Company Logo"></p>
+        </header>
+        <section>
+            <h2>Terms and Conditions</h2>
+            <p>By signing this contract, you agree to the following terms and conditions:</p>
+            <textarea name="terms" rows="4" readonly>THIS IS AN AGREEMENT BETWEEN YOU OR THE ENTITY THAT YOU REPRESENT ( HEREINAFTER “YOU” or “YOUR”) AND ZOHO CORPORATION PRIVATE LIMITED (HEREINAFTER “ZOHO”) GOVERNING YOUR USE OF ZOHO SUITE OF ONLINE BUSINESS PRODUCTIVITY AND COLLABORATION SOFTWARE IF YOU ARE BASED IN INDIA. IF YOU ARE NOT BASED IN INDIA, OUR GLOBAL TERMS OF SERVICE WILL APPLY.</textarea>
+        </section>
+        <form action="/sign" method="post">
+            <div class="form-group">
+                <label for="signer_name">Signer's Full Name:</label>
+                <input type="text" id="signer_name" name="signer_name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="signer_email">Email:</label>
+                <input type="email" id="signer_email" name="signer_email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="sign_date">Date:</label>
+                <input type="date" id="sign_date" name="sign_date" required>
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature:</label>
+                <input type="text" id="signature" name="signature" placeholder="Enter your signature" required>
+            </div>
+            <button id="btn" type="submit">Sign Contract</button>
+        </form>
+    </div>
+</body>
+</html>
